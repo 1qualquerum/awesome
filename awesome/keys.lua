@@ -18,8 +18,8 @@ globalkeys = gears.table.join(
     -- PROGRAMS
     awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
             {description = "open a terminal", group = "programs"}),
-    --awful.key({ modkey },           "space",     function () awful.spawn("dmenu_run") end,
-    --        {description = "show dmenu", group = "programs"}),
+    awful.key({ modkey },           "space",     function () awful.spawn("dmenu_run") end,
+           {description = "run dmenu", group = "programs"}),
     awful.key({ modkey },           "b",     function () awful.spawn("brave") end,
             {description = "open brave", group = "programs"}),
     awful.key({ modkey, "Shift" },  "s",     function () awful.spawn("spectacle -r -c -b") end,
@@ -28,8 +28,8 @@ globalkeys = gears.table.join(
             {description = "open pamac", group = "programs"}),
     awful.key({ "Control", "Shift" },  "Escape",     function () awful.spawn("alacritty -e htop") end,
             {description = "spawn htop", group = "programs"}),
-    awful.key({ modkey },  "space",     function () awful.spawn('rofi -modi drun -show drun -display-drun "Apps : " -line-padding 4 -columns 2 -lines 5 -padding 50 -hide-scrollbar -show-icons -drun-icon-theme "Arc-X-D" -font "Noto Sans Regular 11"') end,
-            {description = "spawn rofi apps", group = "programs"}),
+    --awful.key({ modkey },  "space",     function () awful.spawn('rofi -modi drun -show drun -display-drun "Apps : " -line-padding 4 -columns 2 -lines 5 -padding 50 -hide-scrollbar -show-icons -drun-icon-theme "Arc-X-D" -font "Noto Sans Regular 11"') end,
+    --        {description = "spawn rofi apps", group = "programs"}),
     awful.key({ alt },  "Tab",     function () awful.spawn('rofi -show window -display-window "Window : " -line-padding 4 -lines 5 -padding 50 -hide-scrollbar -show-icons -drun-icon-theme "Arc-X-D" -font "Noto Sans Regular 11"') end,
             {description = "spawn rofi widow switcher", group = "programs"}),
 
